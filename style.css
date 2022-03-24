@@ -1,0 +1,210 @@
+:root{
+    --Blue: hsl(223, 87%, 63%);
+
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+*{
+    margin: 0cm;
+    padding: 0cm;
+    font-family: "Libre Franklin";
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+#ping{
+    margin-top: 2cm;
+}
+#title{
+    color: var(--Gray);
+    font-variation-settings: "wght" 300;
+    margin-top: 1cm;
+    font-size: 1.2cm;
+}
+#title span{
+    color:var(--Very-Dark-Blue) ;
+    font-variation-settings: "wght" 700;
+}
+#subscribe{
+    font-size: 0.5cm;
+    margin-top: 0.3cm;
+    color: var(--Very-Dark-Blue);
+    font-variation-settings: "wght" 300;
+}
+#form{
+    display: flex;
+    flex-direction: row;
+}
+#email-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#email{
+    margin-top: 0.8cm;
+    width: 10cm;
+    height: 1.2cm;
+    border-radius: 2cm;
+    border: 1px solid var(--Pale-Blue);
+    padding-left: 0.8cm;
+}
+#email::placeholder{
+    color: var(--Pale-Blue);
+    font-size: 0.35cm;
+}
+#submit{
+    height: 1.2cm;
+    width: 5cm;
+    margin-top: 0.8cm;
+    margin-left: 0.3cm;
+    border-radius: 2cm;
+    background-color: var(--Blue);
+    border-style: none;
+    color: #fff;
+    font-variation-settings: "wght" 600;
+    font-size: 0.4cm;
+    box-shadow: rgba(132, 170, 240, 0.322) 0px 10px 20px 0px;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: hsl(223, 87%, 70%);
+}
+#error{
+    display:block;
+    color: var(--Light-Red);
+    left: 5cm;
+    margin-left: 0.7cm;
+    margin-top: 0.2cm;
+    font-size: 0.3cm;
+    font-style: italic;
+}
+#illust{
+    width: 33%;
+    margin-top: 2cm;
+}
+#social-network{
+    display: flex;
+    justify-content: space-between;
+    width: 4cm;
+    margin-top: 2cm;
+}
+.fa-facebook-f{
+    color: var(--Blue);
+    border: 1px solid hsl(225, 13%, 94%);
+    border-radius: 2cm;
+    padding: 0.3cm;
+    padding-left: 0.35cm;
+    padding-right: 0.35cm;
+    transition: 0.3s;
+}
+.fa-facebook-f:hover{
+    color: #fff;
+    background-color: var(--Blue);
+    cursor: pointer;
+}
+.fa-twitter{
+    color: var(--Blue);
+    border: 1px solid hsl(225, 13%, 94%);
+    border-radius: 2cm;
+    padding: 0.3cm;
+    transition: 0.3s;
+}
+.fa-twitter:hover{
+    color: #fff;
+    background-color: var(--Blue);
+    cursor: pointer;
+}
+.fa-instagram{
+    color: var(--Blue);
+    border: 1px solid hsl(225, 13%, 94%);
+    border-radius: 2cm;
+    padding: 0.3cm;
+    transition: 0.3s;
+}
+.fa-instagram:hover{
+    color: #fff;
+    background-color: var(--Blue);
+    cursor: pointer;
+}
+#copyright{
+    margin-top: 1cm;
+    color: var(--Gray);
+    font-size: 0.4cm;
+}
+@media screen and (max-width: 625px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+    }
+    #ping{
+        width: 15%;
+        margin-top: 2cm;
+    }
+    #title{
+        margin-top: 1cm;
+        font-size: 0.7cm;
+        font-weight: 300;
+    }
+    #title span{
+        font-weight: 700;
+    }
+    #subscribe{
+        font-size: 0.39cm;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #email-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #email{
+        margin-top: 0.8cm;
+        width: 7.5cm;
+        height: 1.1cm;
+    }
+    #submit{
+        height: 1.1cm;
+        width: 8.3cm;
+        margin-left: 0cm;
+        margin-top: 0.3cm;
+        box-shadow: rgba(132, 170, 240, 0.322) 0px 10px 20px 0px;
+    }
+    #error{
+        display:block;
+        color: var(--Light-Red);
+        left: 5cm;
+        margin-left: 0.7cm;
+        margin-top: 0.2cm;
+        font-size: 0.3cm;
+        font-style: italic;
+    }
+    #illust{
+        width: 85%;
+        margin-top: 2cm;
+    }
+    #social-network{
+        display: flex;
+        justify-content: space-between;
+        width: 4cm;
+        margin-top: 3cm;
+    }
+    #copyright{
+        margin-top: 0.5cm;
+        color: var(--Gray);
+        font-size: 0.3cm;
+    }
+}
